@@ -9,6 +9,17 @@
 <body>
 
 <%= yield %>
-
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA3EIwiN6XnlIpDw_ofvGjFNuqDp1SvgW0",
+      authDomain: "bloc-platform-8bde4.firebaseapp.com",
+      databaseURL: "https://bloc-platform-8bde4.firebaseio.com",
+      storageBucket: "bloc-platform-8bde4.appspot.com",
+    };
+    firebase.initializeApp(config);
+  </script>
 </body>
 </html>
